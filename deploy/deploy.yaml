@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: aks-helloworld
-        image: mcr.microsoft.com/azuredocs/aks-helloworld:v1
+        image:  ghcr.io/hashilbasheer/react-poc:b74a8c09b5534a70218fab625fa05d243572e7c4
         ports:
         - containerPort: 80
         env:

@@ -14,12 +14,9 @@ spec:
     spec:
       containers:
       - name: aks-helloworld
-        image:  ghcr.io/hashilbasheer/react-poc:e40d30699c297ba5cbed1a87eb6bde6b183d5a29
+        image:  ghcr.io/hashilbasheer/react-poc:19eb9b965983682e03658a79e39884b5fb76874d
         ports:
         - containerPort: 3000
-        env:
-        - name: TITLE
-          value: "Welcome to Azure Kubernetes Service , This Application is Deployed via Argo CD !!!!!!!!!!!!!!!"
 ---
 apiVersion: v1
 kind: Service
@@ -50,4 +47,4 @@ spec:
           service: 
             name: aks-helloworld
             port: 
-              number: 3000
+              number: 80

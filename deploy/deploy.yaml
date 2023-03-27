@@ -48,3 +48,4 @@ spec:
             name: aks-helloworld
             port: 
               number: 3000
+This is text entered via the keyboard or via a script.

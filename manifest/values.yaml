@@ -7,4 +7,4 @@ namespace: sampleapp
 
 image:
   name: ghcr.io/hashilbasheer/react-poc
-  tag: 5
+  tag: 21

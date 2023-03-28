@@ -1,10 +1,12 @@
 
 appName: aks-helloworld
-
-
 namespace: sampleapp
-
-
 image:
   name: ghcr.io/hashilbasheer/react-poc
   tag: 21
+spec:
+  template:
+    spec:
+      containers:
+        - image:
+            tag: "6"

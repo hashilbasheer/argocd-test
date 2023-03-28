@@ -7,7 +7,7 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
-  - host: test.6ed500daefb04e85a911.eastus.aksapp.io
+  - host: volvo-sales-cockpit.6ed500daefb04e85a911.eastus.aksapp.io
 
     http:
       paths:

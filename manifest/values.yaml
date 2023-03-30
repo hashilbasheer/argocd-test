@@ -2,4 +2,4 @@ appName: aks-helloworld
 namespace: sampleapp
 image:
   name: ghcr.io/hashilbasheer/react-poc
-  tag: "22"
+  tag: "23"

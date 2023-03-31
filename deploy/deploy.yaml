@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aks-helloworld  
+  name: test-helloworld  
   namespace: sampleapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: aks-helloworld
+      app: test-helloworld
   template:
     metadata:
       labels:
-        app: aks-helloworld
+        app: test-helloworld
     spec:
       containers:
-      - name: aks-helloworld
+      - name: test-helloworld
         image:  ghcr.io/hashilbasheer/react-poc:latest
         ports:
         - containerPort: 3000
@@ -22,19 +22,19 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: aks-helloworld  
+  name: test-helloworld  
   namespace: sampleapp
 spec:
   type: ClusterIP
   ports:
   - port: 3000
   selector:
-    app: aks-helloworld
+    app: test-helloworld
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: aks-helloworld
+  name: test-helloworld
   namespace: sampleapp
   annotations:
     kubernetes.io/ingress.class: addon-http-application-routing
@@ -48,6 +48,6 @@ spec:
         pathType: Prefix
         backend:
           service: 
-            name: aks-helloworld
+            name: test-helloworld
             port: 
               number: 3000

@@ -1,7 +1,7 @@
 appName: aks-helloworld
 namespace: sampleapp
 imagesB:
-  tag: a333565
+  tag: 4f9ffff
 imagesA:
   tag: 4f9ffff
 imagesC:

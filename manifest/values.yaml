@@ -1,7 +1,5 @@
 appName: aks-helloworld
 namespace: sampleapp
-image:
+images:
   name: ghcr.io/hashilbasheer/react-poc
   tag: "41"
-images:
-  tag: 3335ccf

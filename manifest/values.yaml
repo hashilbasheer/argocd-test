@@ -3,3 +3,5 @@ namespace: sampleapp
 image:
   name: ghcr.io/hashilbasheer/react-poc
   tag: "41"
+images:
+  tag: c1de4a1

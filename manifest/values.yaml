@@ -1,7 +1,4 @@
 appName: aks-helloworld
 namespace: sampleapp
-images:
-  name: ghcr.io/hashilbasheer/react-poc
-  tag: "c2d4c8d"
 imagesB:
   tag: 7e54d01

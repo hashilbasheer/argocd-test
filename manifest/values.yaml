@@ -3,7 +3,7 @@ namespace: sampleapp
 imagesB:
   tag: 9fa6654
 imagesA:
-  tag: 390afcb
+  tag: 9fa6654
 imagesC:
   tag: 9fa6654
 imagesK:

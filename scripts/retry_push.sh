@@ -90,7 +90,7 @@ retry_push() {
                     return 0  # Exit the script with a success code
                 else
                     echo "Push failed on attempt $attempt. Retrying in $RETRY_DELAY seconds..."
-                    ((attempt++))
+                    attempt=$((attempt + 1))
                     sleep $RETRY_DELAY
                 fi
             done

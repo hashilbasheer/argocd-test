@@ -3,7 +3,7 @@ namespace: sampleapp
 imagesB:
   tag: 46e4f85
 imagesA:
-  tag: bf5f3e7
+  tag: 081330a
 imagesC:
   tag: 46e4f85
 imagesK:

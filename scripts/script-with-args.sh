@@ -27,8 +27,8 @@ retry_push() {
 
             while [ $rebase_attempt -le $REBASE_RETRIES ]; do
                 # Use 'theirs' strategy to resolve conflicts in specific file
-                git checkout --theirs dev-values.yaml
-                git add dev-values.yaml
+                git checkout --theirs manifest/dev-values.yaml
+                git add manifest/dev-values.yaml
 
                 # Try to continue the rebase after resolving the conflict
                 if git rebase --continue; then
@@ -60,8 +60,8 @@ retry_push() {
 
                 while [ $rebase_attempt -le $REBASE_RETRIES ]; do
                     # Use 'theirs' strategy to resolve conflict if detected
-                    git checkout --theirs dev-values.yaml
-                    git add dev-values.yaml
+                    git checkout --theirs manifest/dev-values.yaml
+                    git add manifest/dev-values.yaml
 
                     # Try to continue the rebase after resolving the conflict
                     if git rebase --continue; then
@@ -87,8 +87,7 @@ retry_push() {
 
         # Commit the changes after staging them with git add
         echo "Adding and committing the changes with SHORT_SHA '$SHORT_SHA'..."
-        git add dev-values.yaml
-        git commit -m "ws-service-analyst image tag changed to '$SHORT_SHA' in DEV"
+        git commit -m "image tag changed to '$SHORT_SHA' in DEV"
 
         # Try to push the changes
         echo "Attempting to push the changes..."

@@ -1,0 +1,42 @@
+appName: aks-helloworld
+namespace: sampleapp
+imagesB:
+  tag: 46e4f85
+imagesA:
+  tag: 46e4f85
+imagesC:
+  tag: 46e4f85
+imagesK:
+  tag: 46e4f85
+imagesF:
+  tag: 46e4f85
+imagesT:
+  tag: 46e4f85
+imagesS:
+  tag: 46e4f85
+imagesL:
+  tag: 46e4f85
+imagesQ:
+  tag: 46e4f85
+imagesR:
+  tag: 46e4f85
+imagesJ:
+  tag: 46e4f85
+imagesE:
+  tag: 46e4f85
+imagesP:
+  tag: 46e4f85
+imagesN:
+  tag: 46e4f85
+imagesO:
+  tag: 46e4f85
+imagesI:
+  tag: 46e4f85
+imagesG:
+  tag: 46e4f85
+imagesM:
+  tag: 46e4f85
+imagesD:
+  tag: 46e4f85
+imagesH:
+  tag: 46e4f85
